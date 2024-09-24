@@ -66,25 +66,26 @@ The model developed in this project achieved a test accuracy of 86%, demonstrati
 The project highlights the power of transfer learning in solving complex image classification tasks with high efficiency and reliability.
 
 ## Future Improvements
-- Data Augmentation:
-Applying data augmentation techniques such as rotation, flipping, and zooming can help improve the model's generalization and performance by increasing the diversity of the training data.
+- **Data Augmentation:**
+    - Applying data augmentation techniques such as rotation, flipping, and zooming can help improve the model's generalization and performance by increasing the diversity of the training data.
 
-- Hyperparameter Tuning:
-Experimenting with different optimizers, learning rates, and batch sizes could help enhance the model’s accuracy and convergence speed.
-Implementing techniques like cross-validation to find the optimal hyperparameters.
-Fine-Tuning the Pre-Trained Model:
+- **Hyperparameter Tuning:**
+    - Experimenting with different optimizers, learning rates, and batch sizes could help enhance the model’s accuracy and convergence speed.
+    - Implementing techniques like cross-validation to find the optimal hyperparameters.
 
-Instead of using the MobileNetV2 model only for feature extraction, fine-tuning the deeper layers could potentially improve classification performance, especially when working with a larger dataset.
-Advanced Architectures:
+- **Fine-Tuning the Pre-Trained Model:**
+    - Instead of using the MobileNetV2 model only for feature extraction, fine-tuning the deeper layers could potentially improve classification performance, especially when working with a larger dataset.
 
-Exploring more advanced deep learning architectures like EfficientNet or ResNet could lead to better accuracy and faster inference times.
-Class Imbalance Handling:
+- Advanced Architectures:
+    - Exploring more advanced deep learning architectures like EfficientNet or ResNet could lead to better accuracy and faster inference times.
 
-Incorporating techniques to handle potential class imbalance (if found in real-world datasets) could further improve model robustness, especially in cases where the dataset may not be as balanced as in this project.
-Deployment and Real-Time Prediction:
+- Class Imbalance Handling:
+    - Incorporating techniques to handle potential class imbalance (if found in real-world datasets) could further improve model robustness, especially in cases where the dataset may not be as balanced as in this project.
 
-Converting the trained model into a format that allows deployment in mobile or web applications, enabling real-time image classification.
-Multi-Class Classification:
+- Deployment and Real-Time Prediction:
+    - Converting the trained model into a format that allows deployment in mobile or web applications, enabling real-time image classification.
 
-Extending the model to handle more than two classes, which could be useful in broader image classification tasks such as recognizing multiple types of animals or objects in the same framework.
+- Multi-Class Classification:
+    - Extending the model to handle more than two classes, which could be useful in broader image classification tasks such as recognizing multiple types of animals or objects in the same framework.
+
 These improvements could enhance the model’s accuracy, robustness, and versatility, making it more applicable to real-world use cases.
