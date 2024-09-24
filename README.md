@@ -7,6 +7,11 @@ This project is focused on building a deep learning model to classify images of 
 - [Dataset](#dataset)
 - [Deep Learning](#deep-learning)
     - [Dataset Preparation](#dataset-preparation)
+    - [Exploratory Data Analysis](#exploratory-data-analysis)
+    - [Data Preprocessing](#data-preprocessing)
+    - [Model Building](#model-building)
+    - [Model Training](#model-training)
+    - [Image Prediction](#image-prediction)
 
 ## Project Overview
 This project focuses on building an image classification model using deep learning to distinguish between images of dogs and cats. Leveraging the Dogs vs Cats dataset from Kaggle, the project uses a pre-trained MobileNetV2 model for transfer learning. The images are preprocessed, labeled, and then fed into the model, which is trained to classify the images with high accuracy. The model is also capable of predicting whether a given image is a dog or a cat.
@@ -23,3 +28,27 @@ Each image is labeled as either a dog or a cat, making this a binary classificat
 
 ## Deep Learning
 ### Dataset Preparation
+- The project uses the popular **Dogs vs Cats** dataset from Kaggle, downloaded using the Kaggle API.
+- The images are extracted and resized to a standard size (224x224) for input into the model.
+
+### Exploratory Data Analysis
+- It counts the number of images for each class (dogs and cats) and prints the image file names for verification.
+- Sample images are displayed using Matplotlib to visually confirm the data.
+
+### Data Preprocessing
+- The images are labeled (0 for cats and 1 for dogs), and the resized images are stored in a separate folder.
+- The dataset is split into training and test sets (80% for training and 20% for testing).
+- The pixel values of the images are normalized by dividing by 255 to scale them to a range of [0, 1].
+
+### Model Building
+- A **pre-trained MobileNetV2** model (a popular deep learning architecture for image classification) is used for transfer learning.
+- A custom classification head is added on top of the pre-trained model for binary classification (dog or cat).
+- The model is compiled using the Adam optimizer and categorical cross-entropy loss.
+
+### Model Training
+- The model is trained on the scaled images for 15 epochs, with accuracy and loss being tracked during training.
+- The trained model is then evaluated on the test data to calculate the final loss and accuracy.
+
+### Image Prediction
+- The model allows users to input an image path, and it processes the image for prediction.
+- Based on the prediction, the image is classified as either a dog or a cat.
